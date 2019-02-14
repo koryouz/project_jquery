@@ -1,10 +1,13 @@
-.navbarN {
-  background-color: rgba(0, 0, 0, 0.75);
+/* attr */
+.colorwhite {
+  color: white;
+  font-family: inherit;
 }
-
-.navbarN div a {
+/* attr */
+nav div a {
   text-decoration: none;
   outline-style: none;
+  color: white;
 }
 
 .imgHome{
@@ -75,8 +78,9 @@
 .footerspace {
   padding-right: 10%;
 }
-
-.colorwhite {
-  color: white;
-  font-family: inherit;
+.modal-lg {
+    max-width: 70em !important;
+}
+.btn-achat{
+  margin-top: 3.4em;
 }
