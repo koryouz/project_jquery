@@ -1,6 +1,6 @@
 $(function () {
   //navbar
-  $('#btnNav').click(function(){
+  $('.btnNav').click(function(){
     var sroll = $(this).attr('data-nav'); ///get  data-nav attribut
     document.body.scrollTop = scroll; // return to top
   });
