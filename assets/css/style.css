@@ -5,18 +5,22 @@
 }
 
 /* attr */
+nav {
+  height: 3.5em; 
+}
+
 nav div a {
   text-decoration: none;
   outline-style: none;
   color: white;
 }
 
-header, body, html {
-  width: 100%;
-  height: 100%;
+.btnNav {
+  color: white;
 }
 
 header {
+  height: 50em;
   background-image: url("../img/top1.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -44,9 +48,6 @@ header {
   text-shadow: 1px 1px 1px black;
   color: white;
 }
-.title{
-  text-align: center;
-}
 
 .subtitle {
   font-size: 40px;
@@ -72,8 +73,8 @@ header {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.card-deck{
-  height:40%;
+.card-deck {
+  height: 40%;
 }
 
 .text-muted {
@@ -84,6 +85,12 @@ header {
 .btn-secondary {
   margin-left: 25%;
   margin-top: 5%;
+}
+
+.title{
+  margin: 20px;
+  text-align: center;
+  font-size: 50px;
 }
 
 .marge {
