@@ -44,6 +44,9 @@ header {
   text-shadow: 1px 1px 1px black;
   color: white;
 }
+.title{
+  text-align: center;
+}
 
 .subtitle {
   font-size: 40px;
@@ -67,6 +70,10 @@ header {
 
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-deck{
+  height:40%;
 }
 
 .text-muted {
