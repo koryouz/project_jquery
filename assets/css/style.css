@@ -1,10 +1,51 @@
-.navbarN {
-  background-color: rgba(0, 0, 0, 0.75);
+/* attr */
+.colorwhite {
+  color: white;
+  font-family: inherit;
 }
-
-.navbarN div a {
+/* attr */
+nav div a {
   text-decoration: none;
   outline-style: none;
+  color: white;
+}
+
+.imgHome{
+  background-image: url("../img/top1.jpg");
+  background-size: 100%;
+  width: 100%;
+  height: 58.9em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ml9 {
+  position: relative;
+  font-weight: 200;
+  font-size: 4em;
+  text-align: center;
+  text-shadow: 1px 1px 1px black;
+  color: white;
+}
+
+.ml9 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml9 .letter {
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
+}
+.imgHome div h2{
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 1px black;
 }
 
 .card:hover {
@@ -18,6 +59,9 @@
 
 .btn-secondary {
   margin-left: 25%;
+  margin-top: 5%;
+}
+.marge{
   margin-top: 5%;
 }
 
@@ -34,8 +78,9 @@
 .footerspace {
   padding-right: 10%;
 }
-
-.colorwhite {
-  color: white;
-  font-family: inherit;
+.modal-lg {
+    max-width: 70em !important;
+}
+.btn-achat{
+  margin-top: 3.4em;
 }

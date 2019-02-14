@@ -1,46 +1,215 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
-  <script src="assets/js/jquery-3.3.1.js"></script>
-  <script src="assets/js/script.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   <title>ShopTout</title>
 </head>
+
 <body>
-  <header>
-    <nav class="navbarN site-header sticky-top py-1">
-      <div class="container d-flex flex-column flex-md-row justify-content-between">
-        <a class="py-2" href="#">
-          <div>
-            <i class="test fas fa-shopping-bag"></i>
-          </div>
-        </a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Sac à mains</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Montre</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Bijoux</a>
-        <a class="py-2" href="#">
-          <i class="fas fa-shopping-cart"></i>
-        </a>
+  <!-- Navbar -->
+  <nav class="site-header sticky-top py-1 bg-dark">
+    <div class="container d-flex flex-column flex-md-row justify-content-between">
+      <a class="py-2" href="">
+        <i id="btnNav" data-nav="0" class="test fas fa-shopping-bag"></i>
+      </a>
+      <a id="btnNav" data-nav="0" class="py-2 d-none d-md-inline-block" href="">Sac à mains</a>
+      <a id="btnNav" data-nav="0" class="py-2 d-none d-md-inline-block" href="">Montre</a>
+      <a id="btnNav" data-nav="0" class="py-2 d-none d-md-inline-block" href="">Bijoux</a>
+      <a class="py-2">
+        <i class="fas fa-shopping-cart btn btn-secondary" data-toggle="modal" data-target="#exampleModalCenter"></i>
+      </a>
+    </div>
+  </nav>
+  <!-- Title Acceuil -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="imgHome col-12">
+        <div class="col-12">
+          <h1 class="ml9">
+            <span class="text-wrapper">
+              <span class="letters">Le fashion par excellence !</span>
+            </span>
+          </h1>
+          <h2>ShopTout | Tout aux meilleurs prix !</h2>
+        </div>
       </div>
-    </nav>
-  </header>
+    </div>
+  </div>
+  <!-- Partie de Virginie sac. -->
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+        <div class="card-deck">
+          <div class="card">
+            <img src="assets/img/sacRose.jpg" class="card-img-top" alt="Sac marron, bordure rose, ornée d'une chaîne et d'un pompom rose.">
+            <div class="card-body">
+              <h5 class="card-title"> Sac à main pompon</h5>
+              <p class="card-text">
+                CATÉGORIE : Sacs à main<br />
+                MARQUE : Aldo <br />
+                MATIÈRE(S) : Cuir synthétique, doublure : Polyester<br />
+                COULEUR(S) : Marron, bordure rose<br />
+                DIMENSIONS: Hauteur 24 cm<br />
+                Longueur: 32 cm<br />
+                Largeur: 15 cm<br />
+                Anse/bandoulière: 15 cm<br />
+                RÉFÉRENCE PRODUIT : 2019001V
+              </p>
+              <p class="card-text"><small class="text-muted">49.95€ TVA incluse</small></p>
+              <button type="button" class="btn btn-secondary">Ajouter au panier</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+        <div class="card-deck">
+          <div class="card">
+            <img src="assets/img/sacRayures.jpg" class="card-img-top" alt="Sac à rayures noir, rose et bordeaux.">
+            <div class="card-body">
+              <h5 class="card-title">Sac à rayures</h5>
+              <p class="card-text">
+                CATÉGORIE : Sac à mains<br />
+                MARQUE : L.Credi<br />
+                MATIÈRE(S) : Cuir synthétique, doublure : Polyester<br />
+                COULEUR(S) : Noir avec rayures<br />
+                DIMENSIONS: Hauteur: 28 cm<br />
+                Longueur: 30 cm <br />
+                Largeur: 14 cm<br />
+                Anse/bandoulière: 20 cm<br />
+                RÉFÉRENCE PRODUIT : 2019002V
+              </p>
+              <p class="card-text"><small class="text-muted">49.95€ TVA incluse</small></p>
+              <button type="button" class="btn btn-secondary">Ajouter au panier</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+        <div class="card-deck">
+          <div class="card">
+            <img src="assets/img/sacNoir.jpg" class="card-img-top" alt="Sac noir design avec fermeture éclair sur le coté.">
+            <div class="card-body">
+              <h5 class="card-title"> Sac noir design</h5>
+              <p class="card-text">
+                CATÉGORIE : Sacs à main<br />
+                MARQUE : Faith <br />
+                MATIÈRE(S) : Cuir synthétique, doublure : Polyester<br />
+                COULEUR(S) : Noir<br />
+                DIMENSIONS: Hauteur 26 cm<br />
+                Longueur: 24 cm<br />
+                Largeur: 19 cm<br />
+                Anse/bandoulière: 20 cm<br />
+                RÉFÉRENCE PRODUIT : 2019003V
+              </p>
+              <p class="card-text"><small class="text-muted">29.95€ TVA incluse</small></p>
+              <button type="button" class="btn btn-secondary">Ajouter au panier</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row marge">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+        <div class="card-deck">
+          <div class="card">
+            <img src="assets/img/sacRouge.jpg" class="card-img-top" alt="Sac rouge vif original">
+            <div class="card-body">
+              <h5 class="card-title"> Sac à main hobo</h5>
+              <p class="card-text">
+                CATÉGORIE : Sacs à main<br />
+                MARQUE : New Look <br />
+                MATIÈRE(S) : Cuir synthétique, doublure : Polyester<br />
+                COULEUR(S) : Rouge<br />
+                DIMENSIONS: Hauteur 25 cm<br />
+                Longueur: 20 cm<br />
+                Largeur: 14 cm<br />
+                Anse/bandoulière: 17 cm<br />
+                RÉFÉRENCE PRODUIT : 2019004V
+              </p>
+              <p class="card-text"><small class="text-muted">20.99€ TVA incluse</small></p>
+              <button type="button" class="btn btn-secondary">Ajouter au panier</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+        <div class="card-deck">
+          <div class="card">
+            <img src="assets/img/sacBeige.jpg" class="card-img-top" alt="Sac beige, motif gris sur le bas.">
+            <div class="card-body">
+              <h5 class="card-title">Sac beige</h5>
+              <p class="card-text">
+                CATÉGORIE : Sac à mains<br />
+                MARQUE : River Island<br />
+                MATIÈRE(S) : Cuir synthétique, doublure : Polyester<br />
+                COULEUR(S) : Beige avec motif gris<br />
+                DIMENSIONS: Hauteur: 28 cm<br />
+                Longueur: 36 cm <br />
+                Largeur: 15 cm<br />
+                Anse/bandoulière: 27 cm<br />
+                RÉFÉRENCE PRODUIT : 2019005V
+              </p>
+              <p class="card-text"><small class="text-muted">49.95€ TVA incluse</small></p>
+              <button type="button" class="btn btn-secondary">Ajouter au panier</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+        <div class="card-deck">
+          <div class="card">
+            <img src="assets/img/sacBleu.jpg" class="card-img-top" alt="Sac bleu style pochette.">
+            <div class="card-body">
+              <h5 class="card-title"> Sac tressé</h5>
+              <p class="card-text">
+                CATÉGORIE : Sacs à main<br />
+                MARQUE : LYDC London <br />
+                MATIÈRE(S) : Cuir synthétique, doublure : Textile<br />
+                COULEUR(S) : Bleu<br />
+                DIMENSIONS: Hauteur 17 cm<br />
+                Longueur: 26 cm<br />
+                Largeur: 9 cm<br />
+                Anse/bandoulière: 23 cm<br />
+                RÉFÉRENCE PRODUIT : 2019006V
+              </p>
+              <p class="card-text"><small class="text-muted">44.95€ TVA incluse</small></p>
+              <button type="button" class="btn btn-secondary">Ajouter au panier</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fin de la partie de Virginie -->
+
   <!-- // DELHAY PART // -->
   <div class="container">
     <div class="row">
-      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
         <div class="card-deck">
           <div class="card">
             <img class="card-img-top" src="assets/img/EV451M00K-C11@6.jpg" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">Montre Ice-Watch Ice crystal</h5>
-              <p class="card-text">CATÉGORIE : Montres<br/>MATIERE : Polyuréthane<br/>CIRCONFÉRENCE : 18 cm<br />LARGEUR : 1.5 cm<br />DIAMETRE : 3.8 cm<br />ÉPAISSEUR DU BOITIER : 0.7 cm<br />Référence : EV451M00K-C11</p>
+              <p class="card-text">CATÉGORIE : Montres<br />MATIERE : Polyuréthane<br />CIRCONFÉRENCE : 18 cm<br />LARGEUR
+                : 1.5 cm<br />DIAMETRE : 3.8 cm<br />ÉPAISSEUR DU BOITIER : 0.7 cm<br />Référence : EV451M00K-C11</p>
               <p class="card-text"><small class="text-muted">PRIX : 18,39 €TVA incluse</small>
                 <button type="button" class="btn btn-secondary">Ajouter au panier</button>
               </p>
@@ -48,13 +217,14 @@
           </div>
         </div>
       </div>
-      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+      <div class="col-xl-4 col-lg-4 col-md-4  col-sm-12 col-12">
         <div class="card-deck">
           <div class="card">
             <img class="card-img-top" src="assets/img/K4451M00I-E11@6.jpg" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">Montre - Mustard</h5>
-              <p class="card-text">CATÉGORIE : Montres<br/>MATIERE : Cuir<br/>CIRCONFÉRENCE : 16.5 cm<br />LARGEUR : 1.3 cm<br />DIAMETRE : 3.8 cm<br />ÉPAISSEUR DU BOITIER : 0.7 cm<br />Référence : K4451M00I-E11</p>
+              <p class="card-text">CATÉGORIE : Montres<br />MATIERE : Cuir<br />CIRCONFÉRENCE : 16.5 cm<br />LARGEUR :
+                1.3 cm<br />DIAMETRE : 3.8 cm<br />ÉPAISSEUR DU BOITIER : 0.7 cm<br />Référence : K4451M00I-E11</p>
               <p class="card-text"><small class="text-muted">PRIX : 8,75 €TVA incluse</small>
                 <button type="button" class="btn btn-secondary">Ajouter au panier</button>
               </p>
@@ -62,13 +232,14 @@
           </div>
         </div>
       </div>
-      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
         <div class="card-deck">
           <div class="card">
             <img class="card-img-top" src="assets/img/EV451M014-D11@2.1.jpg" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">Montre - Silver</h5>
-              <p class="card-text">CATÉGORIE : Montres<br/>MATIERE : Acier inoxydable<br/>CIRCONFÉRENCE : 23.3 cm<br />LARGEUR : 1.5 cm<br />DIAMETRE : 3.2 cm<br />ÉPAISSEUR DU BOITIER : 0.7 cm<br />Référence : EV451M014-D11</p>
+              <p class="card-text">CATÉGORIE : Montres<br />MATIERE : Acier inoxydable<br />CIRCONFÉRENCE : 23.3 cm<br />LARGEUR
+                : 1.5 cm<br />DIAMETRE : 3.2 cm<br />ÉPAISSEUR DU BOITIER : 0.7 cm<br />Référence : EV451M014-D11</p>
               <p class="card-text"><small class="text-muted">17,49 €TVA incluse</small>
                 <button type="button" class="btn btn-secondary">Ajouter au panier</button>
               </p>
@@ -78,13 +249,14 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
         <div class="card-deck">
           <div class="card">
             <img class="card-img-top" src="assets/img/AN651M00Y-Q11@2.1.jpg" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">Montre - Black</h5>
-              <p class="card-text">CATÉGORIE : Montres<br/>MATIERE : Cuir synthétique<br/>CIRCONFÉRENCE : 17 cm<br />LARGEUR : 1.5 cm<br />DIAMETRE : 3.5 cm<br />ÉPAISSEUR DU BOITIER : 1.8 cm<br />Référence : AN651M00Y-Q11</p>
+              <p class="card-text">CATÉGORIE : Montres<br />MATIERE : Cuir synthétique<br />CIRCONFÉRENCE : 17 cm<br />LARGEUR
+                : 1.5 cm<br />DIAMETRE : 3.5 cm<br />ÉPAISSEUR DU BOITIER : 1.8 cm<br />Référence : AN651M00Y-Q11</p>
               <p class="card-text"><small class="text-muted">PRIX : 18,39 €TVA incluse</small>
                 <button type="button" class="btn btn-secondary">Ajouter au panier</button>
               </p>
@@ -92,13 +264,14 @@
           </div>
         </div>
       </div>
-      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
         <div class="card-deck">
           <div class="card">
             <img class="card-img-top" src="assets/img/K0051E00V-Q11@5.1.jpg" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">THE ESTELLE CLASSIC - Montre</h5>
-              <p class="card-text">CATÉGORIE : Montres<br/>MATIERE : Cuir<br/>CIRCONFÉRENCE : 16.5 cm<br />LARGEUR : 1.5 cm<br />DIAMETRE : 3.6 cm<br />ÉPAISSEUR DU BOITIER : 0.7 cm<br />Référence : K0051E00V-Q11</p>
+              <p class="card-text">CATÉGORIE : Montres<br />MATIERE : Cuir<br />CIRCONFÉRENCE : 16.5 cm<br />LARGEUR :
+                1.5 cm<br />DIAMETRE : 3.6 cm<br />ÉPAISSEUR DU BOITIER : 0.7 cm<br />Référence : K0051E00V-Q11</p>
               <p class="card-text"><small class="text-muted">PRIX : 28,00 €TVA incluse</small>
                 <button type="button" class="btn btn-secondary">Ajouter au panier</button>
               </p>
@@ -106,13 +279,14 @@
           </div>
         </div>
       </div>
-      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
         <div class="card-deck">
           <div class="card">
             <img class="card-img-top" src="assets/img/EV451M00S-O11@5.jpg" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">Montre - Silver</h5>
-              <p class="card-text">CATÉGORIE : Montres<br/>MATIERE : Polyuréthane<br/>CIRCONFÉRENCE : 17.5 cm<br />LARGEUR : 1.8 cm<br />DIAMETRE : 3.6 cm<br />ÉPAISSEUR DU BOITIER : 0.7 cm<br />Référence : EV451M00S-O11</p>
+              <p class="card-text">CATÉGORIE : Montres<br />MATIERE : Polyuréthane<br />CIRCONFÉRENCE : 17.5 cm<br />LARGEUR
+                : 1.8 cm<br />DIAMETRE : 3.6 cm<br />ÉPAISSEUR DU BOITIER : 0.7 cm<br />Référence : EV451M00S-O11</p>
               <p class="card-text"><small class="text-muted">PRIX : 14,99 €TVA incluse</small>
                 <button type="button" class="btn btn-secondary">Ajouter au panier</button>
               </p>
@@ -122,11 +296,168 @@
       </div>
     </div>
   </div>
+
+  <!-- Partie de Virginie bijoux. -->
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-4">
+        <div class="card-deck">
+          <div class="card">
+            <img src="assets/img/bague.jpg" class="card-img-top" alt="Bague Swarovski">
+            <div class="card-body">
+              <h5 class="card-title"> Bague Swarovski</h5>
+              <p class="card-text">
+                CATÉGORIE : Bijoux<br />
+                MARQUE : Swarovski <br />
+                MATERIAU : Métal<br />
+                FINITIONS : Rodhié<br />
+                DIMENSIONS : Diamètre: 1.75 cm en taille 50<br />
+                RÉFÉRENCE PRODUIT : 2019007V
+              </p>
+              <p class="card-text"><small class="text-muted">79.95€ TVA incluse</small></p>
+              <button type="button" class="btn btn-secondary">Ajouter au panier</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-4">
+        <div class="card-deck">
+          <div class="card">
+            <img src="assets/img/collier.jpg" class="card-img-top" alt="Collier chaîne fine infinity.">
+            <div class="card-body">
+              <h5 class="card-title">Collier infinity</h5>
+              <p class="card-text">
+                CATÉGORIE : Bijoux<br />
+                MARQUE : Orelia<br />
+                MATERIAU : Métal<br />
+                FINITIONS : Poli<br />
+                DIMENSIONS: Longeurs: 38 cm en taille unique<br />
+                RÉFÉRENCE PRODUIT : 2019008V<br />
+              </p>
+              <p class="card-text"><small class="text-muted">16.95€ TVA incluse</small></p>
+              <button type="button" class="btn btn-secondary">Ajouter au panier</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-4">
+        <div class="card-deck">
+          <div class="card">
+            <img src="assets/img/braceletRose.jpg" class="card-img-top" alt="Bracelet rose gold, fermeture cordon bleu marine.">
+            <div class="card-body">
+              <h5 class="card-title">Bracelet rose gold</h5>
+              <p class="card-text">
+                CATÉGORIE : Bijoux<br />
+                MARQUE : Skagen <br />
+                MATERIAU : Acier inoxydable<br />
+                FINITIONS : Poli<br />
+                DIMENSIONS: Diamètre : 6 cm en taille unique<br />
+                RÉFÉRENCE PRODUIT : 2019009V
+              </p>
+              <p class="card-text"><small class="text-muted">48.95€ TVA incluse</small></p>
+              <button type="button" class="btn btn-secondary">Ajouter au panier</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row marge">
+      <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-4">
+        <div class="card-deck">
+          <div class="card">
+            <img src="assets/img/bouclesRouge.jpg" class="card-img-top" alt="Boucles d'oreilles rouge en forme de fleurs avec strass.">
+            <div class="card-body">
+              <h5 class="card-title">Boucles d'oreilles Fleurs</h5>
+              <p class="card-text">
+                CATÉGORIE : Bijoux<br />
+                MARQUE : Aldo <br />
+                MATERIAU : Verre, Acier<br />
+                FINITIONS : Mat, Poli<br />
+                DIMENSIONS : Largeur : 7.3 cm<br />
+                Longueur : 9cm<br />
+                RÉFÉRENCE PRODUIT : 2019010V
+              </p>
+              <p class="card-text"><small class="text-muted">14.99€ TVA incluse</small></p>
+              <button type="button" class="btn btn-secondary">Ajouter au panier</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-4">
+        <div class="card-deck">
+          <div class="card">
+            <img src="assets/img/bagueElf.jpg" class="card-img-top" alt="Bague dorée style eflique.">
+            <div class="card-body">
+              <h5 class="card-title">Bague Elfique</h5>
+              <p class="card-text">
+                CATÉGORIE : Bijoux<br />
+                MARQUE : Pilgrim <br />
+                MATERIAU : Métal<br />
+                FINITIONS : Doré<br />
+                DIMENSIONS: Circonférence: 5.4 cm en taille 50<br />
+                RÉFÉRENCE PRODUIT : 2019011V
+              </p>
+              <p class="card-text"><small class="text-muted">17.95€ TVA incluse</small></p>
+              <button type="button" class="btn btn-secondary">Ajouter au panier</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-4">
+        <div class="card-deck">
+          <div class="card">
+            <img src="assets/img/bouclesTrombonnes.jpg" class="card-img-top" alt="Boucles d'oreilles créoles avec trombonnes.">
+            <div class="card-body">
+              <h5 class="card-title"> Boucles d'oreilles trombonnes</h5>
+              <p class="card-text">
+                CATÉGORIE : Bijoux<br />
+                MARQUE : Pilgrim <br />
+                MATERIAU : Métal<br />
+                FINITIONS : Argentée,Poli<br />
+                DIMENSIONS: Longueur : 6 cm<br />
+                Dimaètre : 2.5 cm<br />
+                RÉFÉRENCE PRODUIT : 2019012V
+              </p>
+              <p class="card-text"><small class="text-muted">34.95€ TVA incluse</small></p>
+              <button type="button" class="btn btn-secondary">Ajouter au panier</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin de la partie de Virginie -->
+  <!-- modal windows -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Panier</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Les objets que vous ajoutez au panier s'afficheront ici.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary btn-achat">Achat !</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end modal windows -->
   <footer class="footer">
-    <a class="footerspace colorwhite" href="#">Accueil</a><a class="footerspace colorwhite" href="#">Contacter-nous</a><a class="colorwhite" href="#">Panier</a>
+    <a class="footerspace colorwhite" href="#">Accueil</a><a class="footerspace colorwhite" href="#">Contacter-nous</a><a
+      class="colorwhite" href="#">Panier</a>
   </footer>
-
   <!-- // DELHAY PART // -->
-
+  <script src="assets/js/jquery-3.3.1.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
+
 </html>
