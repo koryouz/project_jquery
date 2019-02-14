@@ -1,3 +1,7 @@
+body, html, header, h1{
+  margin: 0px;
+  padding: 0px;
+}
 .navbarN {
   background-color: rgba(0, 0, 0, 0.75);
 }
@@ -6,43 +10,51 @@
   text-decoration: none;
   outline-style: none;
 }
-
-.imgHome{
-  background-image: url("../img/top1.jpg");
-  background-size: 100%;
+header, body, html{
   width: 100%;
-  height: 58.9em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 100%;
 }
-.ml9 {
-  position: relative;
+header{
+  background-image: url("../img/top1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+.wrapper{
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.content{
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  text-shadow: 1px 1px 10px black;
+}
+.ml9{
+  font-size: 80px;
   font-weight: 200;
-  font-size: 4em;
   text-align: center;
   text-shadow: 1px 1px 1px black;
   color: white;
 }
-
+.subtitle{
+  font-size: 40px;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
 .ml9 .text-wrapper {
-  position: relative;
   display: inline-block;
   padding-top: 0.2em;
   padding-right: 0.05em;
   padding-bottom: 0.1em;
   overflow: hidden;
 }
-
 .ml9 .letter {
   transform-origin: 50% 100%;
   display: inline-block;
   line-height: 1em;
-}
-.imgHome div h2{
-  color: white;
-  text-align: center;
-  text-shadow: 1px 1px 1px black;
 }
 
 .card:hover {
