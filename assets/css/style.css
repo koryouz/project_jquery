@@ -24,6 +24,9 @@
   text-shadow: 1px 1px 1px black;
   color: white;
 }
+.title{
+  text-align: center;
+}
 
 .ml9 .text-wrapper {
   position: relative;
