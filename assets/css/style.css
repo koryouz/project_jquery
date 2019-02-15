@@ -8,7 +8,6 @@
 nav {
   height: 3.5em; 
 }
-
 nav div a {
   text-decoration: none;
   outline-style: none;
@@ -17,6 +16,7 @@ nav div a {
 
 .btnNav {
   color: white;
+  cursor: pointer;
 }
 
 header {
@@ -104,6 +104,7 @@ a {
 }
 
 footer {
+  margin-top: 2em;
   color: white;
 }
 
@@ -117,4 +118,10 @@ hr {
 
 .btn-achat {
   margin-top: 3.4em;
+}
+
+.amount-items {
+  width: 10%;
+  float: left;
+  text-align: center;
 }
